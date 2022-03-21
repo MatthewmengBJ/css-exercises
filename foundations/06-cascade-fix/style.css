@@ -1,33 +1,41 @@
+/*para and small-para both have color as red. */
 .para,
 .small-para {
   color: hsl(0, 100%, 50%);
 }
-
+/*element with <para> class is with 22px. */
+.para {
+  font-size: 22px;
+}
+/*add p.small-para to make sure only element is <p> and <small-para>
+can have a font-size of 14px. 
+Or, we can simply use .small-para so that only element with <small-para>
+is with font-size of 14px.*/
 .small-para {
   font-size: 14px;
 }
 
-.para {
-  font-size: 22px;
-}
 
-.confirm {
+/*using ID selector*/
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
 } 
-
+/*class <cancel> and <button> can have the same font size. But button with
+ID confirm-button can have different color and background color.*/
+.cancel,
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
-
-.child {
+/*element with both <text> and <child> class can have font size of 14px and red color.*/
+.text.child {
   color: red;
   font-size: 14px;
 }
-
+/*element with both class text and type div can have green color and 22px*/
 div.text {
   color: green;
   font-size: 22px;
