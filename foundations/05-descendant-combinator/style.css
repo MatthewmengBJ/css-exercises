@@ -1,6 +1,12 @@
-.container .text {
+/* 如果是同时包含div type 和 text class的元素会按照以下方式渲染*/
+div .text {
     background-color: yellow;
     color: red;
     font-size: 20px;
     text-align: center;
+}
+/*如果仅包括text class的元素会按照以下方式渲染*/
+.text{
+    font-size: 40px;
+    color: blue;
 }
